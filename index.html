@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\style.css">
+    <title>Mi página web</title>
+</head>
+<body>
+    <!--Menu despegable-->
+<nav>
+    <ul class="menuHorizontal">
+        <li id="logo"><a href="https://www.upc.edu.pe/" target="_blank"><img src="imagenes/iconos/logo_upc_red.png" alt="upc" width="40px" height="35px"></a></li>
+        <li><a onclick="scrollToIndex()"><img src="imagenes/iconos/icons8-casa-48.png" alt="home" width="30px">Inicio</a></li>
+        <li><a href=""><img src="imagenes/iconos/icons8-bookmark-30.png" alt="book">Cursos</a>
+            <!--Menu despegable-->
+        <ul class="menuVertical">
+            <li><a href="#">HTML</a></li>
+            <li><a href="">CSS</a></li>
+            <li><a href="">JAVASCRIPT</a></li>
+        </ul>
+        </li>
+        <li><a onclick="scrollToForm()">Inscripcion</a></li>
+        <li><a href="html/contactos.html">Contacto</a></li>
+    </ul>
+</nav>
+<div id="firstDiv">
+    <h4>Fuente
+    </h4>
+    <a href="https://www.upc.edu.pe/" target="_blank">https://www.upc.edu.pe/</a>
+</div>
+<div>
+    <h1>
+        <CENTER> Mi primera página</CENTER>
+    </h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, iste ducimus! Dicta excepturi, dignissimos tempore minima illum, ipsum magni fuga voluptatum odit itaque distinctio iusto officia debitis voluptates soluta! Corporis?</p>
+</div>
+<div>
+    <h3>Temas</h3>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+    </ol>
+    <hr>
+</div>
+<div id="textoHTML">
+    <h3>HTML</h3>
+    <p>
+        HTML is the standard markup language for Web pages.
+        With HTML you can create your own Website.        
+        HTML is easy to learn - You will enjoy it!
+    </p>
+    <h5>Fuente</h5>
+    <li><a href="https://www.w3schools.com/html/default.asp" target="_blank">Link</a></li>
+    <video controls><source src="imagenes/html5.mp4" type="video/mp4"></video>
+    <hr>
+</div>
+<div id="textCSS">
+    <h3>CSS</h3>
+    <p>
+        CSS is the language we use to style an HTML document.
+        CSS describes how HTML elements should be displayed.
+        This tutorial will teach you CSS from basic to advanced.
+    </p>
+    <h5>Fuente</h5>
+    <li><a href="https://www.w3schools.com/css/default.asp" target="_blank">Link</a></li>
+    <hr>
+</div>
+<div id="textJS">
+    <h3>JAVASCRIPT</h3>
+    <p>
+        JavaScript is the world's most popular programming language.
+        JavaScript is the programming language of the Web.
+        JavaScript is easy to learn.
+        This tutorial will teach you JavaScript from basic to advanced.
+    </p>
+    <h5>Fuente</h5>
+    <li><a href="https://www.w3schools.com/js/default.asp" target="_parent">Link</a></li>
+    <hr>
+</div>
+
+<div class="Inscripcion">
+    <div class="container_inscripcion">
+        <div class="text_inscripcion">
+            <p id="formulario">FORMULARIO DE INSCRIPCION</p>
+            <form name="frm" class="form form-register" novalidate>
+                <div>
+                    <label for="fname">
+                        <i class='bx bx-user' ></i>
+                        <input type="text" placeholder="Nombre Usuario" name="fname">
+                    </label>
+                </div>
+                <div>
+                    <label for="lname">
+                        <i class='bx bx-user' ></i>
+                        <input type="text" placeholder="Apellido Usuario" name="lname">
+                    </label>
+                </div>
+                <div>
+                    <label for="codi">
+                        <i class='bx bx-id-card' ></i>
+                        <input type="text" placeholder="Contraseña" name="codi">
+                    </label>
+                </div>
+                <div>
+                    <label for="correo">
+                        <i class='bx bx-envelope' ></i>
+                        <input type="email" placeholder="Correo Electronico" name="correo">
+                    </label>
+                </div>
+                <div>
+                    <label for="celular">
+                        <i class='bx bx-phone' ></i>
+                        <input type="text" placeholder="Celular" name="celular">
+                    </label>
+                </div>
+                <div>
+                    <input type="submit" value="Registrarse">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="containerSocialNetwork">
+    <ul class="banerSocialNetwork">
+        <li>
+            <img src="imagenes/iconos/icons8-facebook-48.png" alt="facebook" width="32px" height="32px">
+            <p>
+                <a href="https://www.facebook.com" target="_blank">Dame un like <br>Facebook</a>
+            </p>
+        </li>
+        <li>
+            <img src="imagenes/iconos/icons8-instagram-48.png" alt="instagram" width="32px" height="32px">
+            <p>
+                <a href="https://www.instagram.com/" target="_blank">Dame un like <br>Instagram</a>
+            </p>
+        </li>
+        <li>
+            <img src="imagenes/iconos/icons8-linkedin-48.png" alt="linkedin" width="32px" height="32px">
+            <p>
+                <a href="https://pe.linkedin.com/" target="_blank">Dame un like <br>Linkedin</a>
+            </p>
+        </li>
+        <li>
+            <img src="imagenes/iconos/icons8-twitter-48.png" alt="twitter" width="32px" height="32px">
+            <p>
+                <a href="https://twitter.com/?lang=es" target="_blank">Dame un like <br>Twitter</a>
+            </p>
+        </li>
+    </ul>
+</div>
+    <footer>
+        <div class="container_footer">
+            <div class="texto_footer">
+                <h4>UPC</h4>
+                <p>Universidad Peruana de Ciencias Aplicadas</p>
+            </div>
+            <div class="texto_footer">
+                <h4>Direccion</h4>
+                <ul>
+                    <li>Direccion: 542, Av. el Derby 254</li>
+                    <li>Santiago de Surco 15023</li>
+                    <li>Telef. (01)6303333</li>
+                </ul>
+            </div>
+            <div class="texto_footer">
+                <h4>Informacion</h4>
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Cursos</a></li>
+                    <li><a href="">Inscripcion</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="conver_footer">
+                <h4>Conversemos</h4>
+                <ul>
+                    <li><a href=""><img src="imagenes/iconos/icons8-facebook-48.png"></a></li>
+                    <li><a href=""><img src="imagenes/iconos/icons8-whatsapp-48.png"></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="creds_footer">
+            <div class="copy_right">
+                <p>@2024 Todos los derechos reservados</p>
+            </div>
+            <div class="legal_footer">
+                <ul>
+                    <li><a href="">Politica de Privacidad</a></li>
+                    <li><a href="">Aviso legal</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+<script src="javascript/script.js"></script>
+</body>
+</html>

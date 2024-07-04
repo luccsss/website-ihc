@@ -1,0 +1,80 @@
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0%;
+}
+body{
+    background-color: white;
+    background-size: cover;
+    margin-bottom: 2%;
+}
+div{
+    margin: 2%;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.726);
+    border-radius: 10px;
+
+}
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    margin: 0px;
+    padding: 0 ;
+    background-color: #2f7c91;
+    align-content: center;
+    height: 70px;
+    z-index: 1000; 
+}
+.menuHorizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0%;
+}
+.menuHorizontal > li > a{
+    display: block;
+    color: antiquewhite;
+    padding: 15px 20px;
+    text-decoration: none;
+
+}
+.menuHorizontal > li:hover{
+    background-color: rgb(166, 202, 231);
+}
+.menuVertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0,0,0,.5);
+}
+.menuHorizontal li:hover .menuVertical{
+    display: block;
+}
+.menuVertical li:hover{
+    background-color: rgb(143, 209, 209);
+}
+.menuVertical li a{
+display: block;
+color: white;
+text-decoration: none;
+padding: 15px 15px 15px 20px ;
+}
+form{
+    margin: 2%;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.726);
+    border-radius: 10px;
+}
+h1{
+    margin: 2%;
+    color: rebeccapurple;
+}
+label, input, form p{
+    margin-bottom: 5px;
+}
+form{
+    position: center;
+}
